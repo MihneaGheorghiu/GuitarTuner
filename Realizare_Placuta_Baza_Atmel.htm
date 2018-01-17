@@ -1,0 +1,315 @@
+<html><head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<style>
+		h1{ font-size:25; text-align:center; font-weight:bold; color:#000066 }
+		h2{ font-size:20; text-align:left; font-weight:bold; color:#000066 }
+		h3{ font-size:18; text-align:left; font-weight:bold; color:#000066 }		
+		p{ font-size:16; text-align:justify; text-indent: 20px; }
+		ol{ font-size:15; text-align:left; }
+		li{ padding-left: 5px; padding-top: 3px; }
+		img{ border: solid 1px #000000; text-align: center; }
+	</style></head><body>
+
+<table border0="" align="center" width="800">
+<tbody><tr><td align="center">
+
+<h1>Etape realizare placuta de baza Proiect PM<br>Varianta Atmel AVR ATmega16</h1>
+
+<br>
+<font style="font-size: 20px; color: red; font-weight: bold;">ATENTIE ! <br>Pasii
+prezentati in acest tutorial va ghideaza pe parcursul realizarii
+placutei si NU REPREZINTA
+TOTI PASII ce trebuie urmati, pana la cel mai mic detaliu, pentru a
+realiza o placuta functionala. TOATE CONEXIUNILE prezente pe schema
+electronica TREBUIE REALIZATE (inclusv cele GND la GND). </font>
+<br>
+<!-- MATERIALE NECESARE -->
+<h2>1. Materiale necesare:</h2>
+
+<p>Se cumpara piesele (pot sa difere anumite lucruri cum ar fi mufa
+pentru sursa de tensiune pe care o aveti, culoarea pieselor,
+dimensiunea placii universale cu gauri pe care o alegeti). In poza de
+mai jos sunt toate piesele de care aveti nevoie pentru a va realiza
+montajul pentru proiect.</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img001.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img001.jpg" width="750"></a>
+
+<p>Sculele pe care le veti folosi sunt urmatoarele: letcon, multimetru, pasta decapanta (sacaz) si fludor, cleste de taiat sarma.</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img002.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img002.jpg" width="750"></a>
+
+<p>Inainte sa va apucati sa lipiti luati in considerare urmatoarele reguli: </p>
+<ol>
+	<li>Piesele care au multe interconexiuni sa fie mai apropiate.</li>
+	<li>Sa
+va ramana pe placa loc pentru partea de proiect (eu am folosit o placa
+mica de 30x40 gauri; daca proiectul vostru va folosi multe componente
+aditionale, va recomand o placa de 50x100 de gauri).</li>
+	<li>Nu le inghesuiti prea tare componentele.</li>
+	<li>Unele
+placi au anumite gauri unite intre ele pe stratul de cupru. Nu
+conectati terminale diferite la aceeasi zona decat daca asa cere
+schema. Daca acest lucru creeaza probleme, folositi un cutter pentru a
+desparti acele zone.</li>
+	<li>Piesele se pozitioneaza pe partea izolata si lipiturile se fac pe partea opusa, cu cupru.</li>
+</ol>
+
+<!-- LIPIREA -->
+<h2>2. Realizare placuta (Aranjare piese si Lipire):</h2>
+
+<p>Letconul este elementul activ in procesul de lipire. El furnizeaza
+caldura necesara topirii cositorului (fludorului). Acesta trebuie sa
+fie de putere mica (20-30 W), pentru a nu incalzi excesiv piesele si
+pentru a nu fi de dimensiuni prea mari.</p>
+<p>Fludorul seamana cu o sarma dar in realitate este un tub de cositor
+(staniu + plumb) umplut cu pasta decapanta. Atunci cand este expus la
+aer, cuprul se oxideaza (isi schimba culoarea din aramiu lucios in maro
+mat). Acest oxid impiedica lipirea cositorului de cupru. Pentru a fi
+indepartat, se foloseste pasta decapanta (sacaz).</p>
+<p>Lipiti piesele cu letconul dupa urmatorul procedeu: 
+</p><ol>
+	<li>Se alimenteaza letconul si se asteapta incalzirea sa.</li>
+	<li>Se ia piesa si se verifica daca incape in locul unde trebuie lipita. Eventual se mai indoaie/indreapta pinii.</li>
+	<li>Se
+pune capul incalzit al letconului astfel incat sa atinga si pinul
+piesei si placuta de cupru, si se asteapta 1-2 secunde ca sa se
+incalzeasca pinul si placuta. Secretul unei lipiri reusite este ca
+amandoua sa fie suficient de fierbinti, altfel nu "prinde" cositorul.Nu
+incalziti prea mult timp, puteti deteriora piesele mai sensibile.</li>
+	<li>Se
+aduce fludorul in zona in care se intalnesc cele 3 elemente (capul
+letconului, pinul si placuta). Fludorul ar trebui sa se topeasca si sa
+se intinda frumos in jurul pinului.</li>
+	<li>Se indeparteaza sarma de
+fludor si apoi capul letconului (daca se procedeaza invers, sarma de
+fludor ramane lipita pe placa si trebuie rupta manual).</li>
+	<li>Se asteapta 3-4 secunde sa se intareasca fludorul topit si se trece la urmatorul pin.</li>
+	<li>Daca
+este nevoie se aplica cu varful letconului si un pic de pasta decapanta
+pe zona de pe placuta unde urmeaza a fi lipita piesa. <font style="color: red;">ATENTIE:
+pasta corodeaza si cuprul, nu numai oxidul, de aceea trebuie sa fie
+foarte putina. In mod normal, pasta este galbena. Ea trebuie intinsa
+atat de bine, incat sa nu se mai vada pe placuta (sa fie atat de
+subtire incat sa fie transparenta). Insist foarte mult asupra acestui
+aspect, deoarece pasta ramasa pe placa poate produce defectiuni, prin
+corodarea traseelor de cupru in timp (cateva zile).</font></li>
+	<li>Ce
+poate merge prost? O lipitura la care pinul a fost incalzit suficient,
+dar placuta a ramas rece. In acest caz cositorul s-a lipit doar de pin.
+Exista situatia inversa: placuta a fost calda si pinul rece. Nici
+aceasta nu este o lipitura buna. O lipitura corecta implica aderenta
+cositorlui atat la pin cat si la placa.<br>Totusi, chiar daca s-a prins
+cositor si de pin si de placuta, lipitura s-ar putea sa nu fie buna.
+Daca este prea putin cositor, la o solicitare mecanica mai intensa,
+acest pin s-ar putea sa se dezlipeasca. Daca este prea mult cositor pe
+unul dintre doi pini apropiati, la lipirea celui de-al doilea s-ar
+putea sa curga cositor si sa se lipeasca de primul. In plus, se
+risipeste material.<br>Pentru indepartarea fludorului in exces, exista
+niste pompe speciale care "sug" fludorul topit. Daca nu aveti asa ceva
+puteti folosi un cutit cu care sa despartiti pinii in cazul in care
+ajung in contact sau niste sarma impletita din multe multe fire subtiri
+care sa absoarba ea fludorul (un fel de fitil de sarma). Cateodata
+insusi sacazul poate desparti lipituri deoarece fludorul adera mai bine
+la cupru si se retrage din zona de contact. <br>Dupa lipirea pieselor
+puteti lipi sarmele de conexiune. Ideal ar fi sa conectati componentele
+in felul urmator: Realizati intai conexiunile foarte apropiate, in
+acest caz poate nu aveti nevoie de sarma ci uniti pastile vecine direct
+cu fludor.</li>
+	<li>Rezistentele sunt simetrice, pinii sunt identici.</li>
+	<li>Condensatoarele mici sunt simetrice, pinii sunt identici.</li>
+	<li>Condensatoarele
+electrolitice (forma de butoias) au marcat ori pinul de + ori cel de -.
+In schema voastra aceste condensatoare au un simbol cu o latura dreapta
+si una curba. Cea dreapta este +.</li>
+	<li>Butonul are mai multe conexiuni, doua cate doua sunt legate intern, identificati cu multimetrul.</li>
+	<li>Cuartz-ul este simetric.</li>
+</ol>
+
+<p>Conectoarele de serial au numerotarea inscriptionata pe partea de plastic.</p>
+
+<h3>2.1. Interfata de programare:</h3>
+
+<p>Interfata de programare este primul pas in echiparea placii voastre de proiect. Schema electrica a acesteia este data mai jos:</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img003.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img003.jpg" width="600"></a>
+<p>Infigeti conectorul DB9-mama pe marginea placii de test cu pinii
+6,7,8,9 pe partea curata (fara cupru) si restul pe partea cu pastile de
+cupru, avand grija sa veniti cu pinii in dreptul gaurilor, ca in
+imagine.</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img004.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img004.jpg" width="600"></a>
+<p>Faceti legatura intre pinii 6 si 7 de la mufa si rezistenta R5 de
+4,7k pe partea fara lipituri (vezi poza de mai jos). Apoi lipiti
+cealalta rezistenta de 4,7K (R6) la pinul 4 al mufei. In continuare
+lipiti diodele Zener (D1 si D2) la capetele celelalte ale
+rezistentelor. Aveti grija la polaritate, catodul diodelor este marcat
+cu o linie neagra.</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img005.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img005.jpg" width="600"></a>
+<p>Anodurile diodelor le lipiti impreuna cu pinul 5 de la mufa seriala
+ca in figura de mai jos. Acest punct constituie masa montajului.</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img006.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img006.jpg" width="600"></a>
+<p>Lipiti in continuare rezistenta R3 (15K), cu un capat la masa
+(anodurile diodelor) si celalalt capat la baza tranzistorul BC547. Tot
+in baza tranzistorului lipiti un contact al rezistentei R2 (10K) ca in
+imaginea de mai jos. Emitorul tranzistorului trebuie sa fie si el
+conectat la masa iar colectorul il lasati deocamdata liber.</p>
+
+<table width="100%"><tbody><tr><td valign="top"><img src="Realizare_Placuta_Baza_Atmel_files/img007.jpg" width="600"></td><td valign="top"> <img src="Realizare_Placuta_Baza_Atmel_files/img008.jpg"></td></tr></tbody></table>
+
+<p>Celalalt contact al lui R2 trebuie sa ajunga la pinul 3 al mufei
+seriale. Prentru aceasta trebuie sa faceti un strap cu o bucata de
+sarma izolata luata din cablul UTP ca mai jos:</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img009.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img009.jpg" width="600"></a>
+
+<h3>2.2. Modulul de alimentare:</h3>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img010.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img010.jpg" width="600"></a>
+<p>Exista doua moduri in care va puteti alimenta montajul. Primul din
+ele (si cel mai simplu) este sa folositi cei 5 volti stabilizati din
+portul USB. Pentru asta aveti nevoie doar de o mufa USB tip A si un
+cablu prelungitor. Pinout-ul pentru mufa USB este urmatorul:</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img011.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img011.jpg" width="600"></a>
+<p>Daca alegeti alimentarea prin USB, aveti dezavantajul ca nu montajul
+vostru nu va putea consuma mai mult de 500mA, aceasta fiind valoarea in
+jurul careia portul este limitat. Daca vreti ca in proiectul vostru sa
+folositi componente cu un consum mare de current (becuri, motorase,
+rezistente de incalzire, relee) puteti recurge la <a href="http://knuttz.net/hosted_pages/USB-Cooking-20060822" target="_new"><font color="#0ed000">masuri extreme</font></a>
+sau puteti folosi alimentare externa, de la un adaptor. Pentru aceasta
+varianta de alimentare aveti nevoie de un stabilizator de tensiune
+(LM7805). Rolul lui este de a prelua tensiunea de la adaptor (minim
+6.5-7 volti) si a furniza o tensiune stabilizata la iesire, in cazul
+nostru 5 volti. Pinout-ul pentru LM7805 este urmatorul:</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img012.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img012.jpg"></a>
+<p>Lipiti LM7805 impreuna cu condensatorul C11 (100nF) in coltul din
+stanga jos al placii, ca in imagine. Pin-ul 3 al lui 7805 va furniza
+tensiunea de 5 volti notata pe schema cu Vcc.</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img013.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img013.jpg" width="600"></a>
+<p>Continuati cu LED-ul de alimentare si rezistenta R4 (1K). Aveti
+grija la polaritatea ledului, pinul mai lung este anodul si-l veti lipi
+la Vcc. Urmeaza sa faceti un strap mai lung ca sa legati masa de la
+alimentare cu cea de la interfata de programare. Ar fi bine daca ati
+folosi cablu de aceeasi culoare pentru un semnal, de exemplu albastru
+pentru masa si portocaliu pentru Vcc. In final ar trebui sa arate ca in
+imaginile de mai jos:</p>
+
+<table width="600"><tbody><tr><td valign="top"><img src="Realizare_Placuta_Baza_Atmel_files/img014.jpg" height="430"></td><td valign="top"><img src="Realizare_Placuta_Baza_Atmel_files/img015.jpg" height="430"></td></tr></tbody></table>
+
+<p>Urmeaza conectarea la adaptor si alimentarea placutei pentru prima
+data. Adaptorul pe care-l folositi trebuie sa aiba o tensiune de iesire
+de minim 7 volti. Pentru conectare va trebuie un conector corespunzator
+tipului de mufa de la adaptor. Cea mai simpla solutie ar fi sa taiati
+mufa de la adaptor si sa legati firele direct. Nu va recomand acest
+lucru, mai ales daca este vorba de incarcatorul de la telefonul vostru
+mobil :)</p>
+<p>Masurati cu multimetrul polaritatea si legati mufa de restul montajului cu doua fire ca in poza de mai jos:</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img016.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img016.jpg" width="600"></a>
+
+<p>Ca sa testati ce-ati facut pana acum, alimentati montajul de la
+adaptor si verificati cu multimetrul tensiunea de iesire care trebuie
+sa fie in jurul valorii de 5V. Daca LED-ul se aprinde, totul e OK si
+puteti continua. In caz contrar (se incalzeste foarte tare
+stabilizatorul, iese fum sau explodeaza ceva), verificati daca ati pus
+corect polaritatea sursei de alimentare, continuitatea legaturilor cu
+multimetrul sau daca ati pus corect led-ul sau 7805.</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img017.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img017.jpg" width="600"></a>
+
+<h3>2.3. Microcontrollerul:</h3>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img018.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img018.jpg" width="750"></a>
+<p>Urmatorul pas este lipirea soclului pentru microcontroller. Gasiti o
+pozitie cat mai centrala pentru el, si lipiti-i provizoriu doar doi
+pini de pe diagonala, cat sa stea fix dar sa poate fi scos usor in caz
+ca vreti sa-i schimbati pozitia pe placa.</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img019.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img019.jpg" width="600"></a>
+<p>Dupa ce ati lipit soclul, continuati cu quartz-ul si cu cei doi
+condensatori de 15pF (C1 si C2 pe schema). Pinii quartz-ului ii veti
+lipi direct la pinii 12 si 13 ai soclului ca in figura de mai jos:</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img020.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img020.jpg" width="600"></a>
+<p>Legati capetele lui C1 si C2 la masa printr-un strap.</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img021.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img021.jpg" width="600"></a>
+<p>Conectati rezistenta R1 (10K) intre pinii 9(Reset) si 10(Vcc) de la
+soclu. Duceti semnalul de Reset din colectorul tranzistorului de la
+interfata de programare pana la pinul 9, si Vcc de la stabilizator la
+pinul 10 prin doua strapuri.</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img022.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img022.jpg" width="600"></a>
+<p>Lipiti condensatorul C5 (100nF) intre pinii 30 si 31 si C6 (100nF)
+intre 31 si 32. Conectati pinii 11 si 31 cu un strap iar 10 si 30 cu un
+altul.</p>
+
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img023.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img023.jpg" width="600"></a>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img024.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img024.jpg" width="600"></a>
+
+<p>Conectati si celelalte semnale ramase de la interfata de programare
+la pinii soclului (PB5, PB6 si PB7) prin niste strapuri. Aveti grija sa
+nu incurcati semnalele intre ele.</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img025.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img025.jpg" width="600"></a>
+
+<p>Conectati LED-ul D7 la pinul 21 (PD7) al controllerului si apoi
+rezistenta R7 catre masa printr-un strap. Aveti grija la polaritatea
+ledului (pinul mai lung e anodul). Petru push-button, pinii care sunt
+pe aceeasi parte sunt cei care nu fac contact. Lipiti butonul cu un
+strap catre masa. Totul ar trebui sa arate ca in imaginea de mai jos:</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img026.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img026.jpg" width="600"></a>
+
+<h3>2.4. Interfata seriala:</h3>
+
+<p>Interfata foloseste circuitul integrat MAX232 pentru a converti
+nivelele de tensiune de pe linia seriala a calculatorului, care sunt de
++12V si &#8211;12V la niveluri logice de 0 - 5V (TTL) cu care lucreaza
+interfata seriala a microcontrollerului.</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img027.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img027.jpg" width="748"></a>
+
+
+<p>Infigeti cealalta mufa DB9 mama pe marginea placii si lipiti-o, ca in imagine.</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img028.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img028.jpg" width="600"></a>
+
+<p>Lipiti circuitul integrat MAX232 la pinii 2 si 3 (Rx si Tx) ai mufei
+seriale. Conectati pinii 11 si 12 ai integratului la pinii 15,
+respectiv 14 ai microcontrollerului cu strapuri. Pinii 15 si 16 ai lui
+MAX232 sunt pini de alimentare si trebuiesc legati la masa si Vcc, ca
+in imaginea de mai jos</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img029.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img029.jpg" width="600"></a>
+
+<p>Ultimul pas il constituie lipirea condensatoarelor de 10uF la pinii
+lui MAX232. Din nou, trebuie sa respectati polaritatea din schema,
+piciorul mai lung al condensatorului fiind &#8220;+&#8221;.</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img030.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img030.jpg" width="600"></a>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img031.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img031.jpg" width="600"></a>
+
+<!-- LIPIREA -->
+<h2>3. Realizare cablu serial (programare si transfer de date):</h2>
+<p>Pentru a putea programa microcontrollerul ATmega16 va trebui sa
+conectati placuta la calculator cu ajutorul unui cablu serial. Cablul
+serial trebuie sa aiba la
+unul din capete o mufa DB9 de tip mama (care se va conecta in portul
+serial al calculatorului), iar la celalalt capat o mufa DB9 de tip tata
+(ce se va conecta
+in interfata de programare de pe placuta - vezi punctul 2.1). Pentru
+realizarea cablului aveti nevoie de o mufa mama DB9, o mufa tata DB9 si
+1-2 metri de cablu UTP.
+Conectarea pinilor intre cele 2 mufe se va realiza 1 la 1 (adica pinul
+1 de pe mufa mama la pinul 1 de pe mufa tata, pinul 2 la pinul 2, etc
+pana la pinul 8. Pinul 9 se va lasa neconectat). Fiecare pin de pe cele
+2 mufe are scris in dreptul lui un numar. Acelasi cablu o sa il
+folositi atat pentru programarea microcontrollerului cat si pentru
+transferul de date pe internfata seriala, insa cand il folositi pentru
+transfer de date cablul va lega portul serial al calculatorului cu
+interfata seriala de pe placuta (vezi punctul 2.4). </p>
+<p>Pentru o schema reprezentativa a modului in care trebuie sa legati pinii celor 2 mufe aveti imaginea de mai jos :</p>
+<a href="http://dan.physics.pub.ro/pm/Realizare_Placuta_Baza_Atmel/images/img032_cablu.jpg" target="_new"><img src="Realizare_Placuta_Baza_Atmel_files/img032_cablu.jpg" width="600"></a>
+
+
+
+</td></tr>
+<tr><td align="left"><br><font style="color: rgb(176, 176, 176); font-size: 13px;">Proiectarea cu Microprocesoare 2006-2007</font></td></tr>
+</tbody></table>
+
+
+</body></html>
